@@ -18,14 +18,13 @@ public class EmployeesController {
     private RestTemplate rest;
 
     private final EmployeeRepository employees;
+    private static final String API = "http://localhost:8080/person/";
+
+    private static final String API_ID = "http://localhost:8080/person/{id}";
 
     public EmployeesController(EmployeeRepository employees) {
         this.employees = employees;
     }
-
-    private static final String API = "http://localhost:8080/person/";
-
-    private static final String API_ID = "http://localhost:8080/person/{id}";
 
     @GetMapping("/")
     public List<Employee> findAll() {

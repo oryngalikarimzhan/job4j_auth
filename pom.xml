@@ -8,6 +8,7 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>ru.job4j</groupId>
     <artifactId>job4j_auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -16,7 +17,6 @@
     <properties>
         <java.version>11</java.version>
     </properties>
-
 
     <dependencies>
         <dependency>
@@ -52,10 +52,6 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
 
     </dependencies>
